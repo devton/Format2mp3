@@ -13,7 +13,7 @@ require 'rspec/autorun'
 Rspec.configure do |c|
   c.mock_with :rspec  
   
-  c.after(:all) do
+  c.after(:each) do
     Dir.glob(File.join(TEST_FILES_PATH, 'output', '*')).each do |file|
       File.delete(file) 
     end
