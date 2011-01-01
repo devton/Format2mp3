@@ -1,1 +1,1 @@
-require 'format2mp3/wma2mp3'
+require 'format2mp3/base'
